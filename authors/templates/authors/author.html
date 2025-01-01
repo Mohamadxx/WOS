@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static%}
+
+{% block title %}
+Authors
+{% endblock %}
+{% block css_files %}
+<link rel="stylesheet" href="{% static  "authors/app.css" %}"/>
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+
+{%block column2%}
+      <div class="item">Name: {{ details.name}}</div>
+      <div class="item">Email: {{details.email}}</div>
+      <div class="item">Address: {{details.address}}</div>
+{%endblock%}
+
